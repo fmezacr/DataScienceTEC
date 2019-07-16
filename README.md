@@ -1,3 +1,3 @@
 # 
 
-Algunas prácticas para el curso de Aprendizaje Automático
+Algunas prácticas y materiales del curso de Aprendizaje Automático
