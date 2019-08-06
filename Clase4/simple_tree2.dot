@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="Sex <= 0.5\nsamples = 535\nvalue = [321, 214]\nclass = Not survived", fillcolor="#f6d5bd"] ;
+1 [label="Pclass <= 1.5\nsamples = 342\nvalue = [270, 72]\nclass = Not survived", fillcolor="#eca36e"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Age <= 36.5\nsamples = 78\nvalue = [44, 34]\nclass = Not survived", fillcolor="#f9e2d2"] ;
+1 -> 2 ;
+3 [label="samples = 35\nvalue = [14, 21]\nclass = Survived", fillcolor="#bddef6"] ;
+2 -> 3 ;
+4 [label="samples = 43\nvalue = [30, 13]\nclass = Not survived", fillcolor="#f0b88f"] ;
+2 -> 4 ;
+5 [label="Age <= 6.5\nsamples = 264\nvalue = [226, 38]\nclass = Not survived", fillcolor="#e9965a"] ;
+1 -> 5 ;
+6 [label="samples = 19\nvalue = [8, 11]\nclass = Survived", fillcolor="#c9e4f8"] ;
+5 -> 6 ;
+7 [label="samples = 245\nvalue = [218, 27]\nclass = Not survived", fillcolor="#e89152"] ;
+5 -> 7 ;
+8 [label="Pclass <= 2.5\nsamples = 193\nvalue = [51, 142]\nclass = Survived", fillcolor="#80c0ee"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Fare <= 22.0\nsamples = 113\nvalue = [6, 107]\nclass = Survived", fillcolor="#44a2e6"] ;
+8 -> 9 ;
+10 [label="samples = 27\nvalue = [4, 23]\nclass = Survived", fillcolor="#5baeea"] ;
+9 -> 10 ;
+11 [label="samples = 86\nvalue = [2, 84]\nclass = Survived", fillcolor="#3e9fe6"] ;
+9 -> 11 ;
+12 [label="Age <= 27.5\nsamples = 80\nvalue = [45, 35]\nclass = Not survived", fillcolor="#f9e3d3"] ;
+8 -> 12 ;
+13 [label="samples = 55\nvalue = [25, 30]\nclass = Survived", fillcolor="#deeffb"] ;
+12 -> 13 ;
+14 [label="samples = 25\nvalue = [20, 5]\nclass = Not survived", fillcolor="#eca06a"] ;
+12 -> 14 ;
+}
